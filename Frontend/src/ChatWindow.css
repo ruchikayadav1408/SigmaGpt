@@ -1,0 +1,198 @@
+
+.chatWindow {
+  flex: 1;
+  min-width: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: #212121;
+}
+
+.navbar {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  border-bottom: 1px solid #303030;
+  font-size: 18px;
+  font-weight: 600;
+  box-sizing: border-box;
+}
+
+.navbar span {
+  margin: 1rem 2rem;
+}
+
+.userIconDiv {
+  margin: 1rem 2rem;
+}
+
+.userIcon {
+  background-color: #6b8afd;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.arrow {
+  color: #999;
+  margin-left: 4px;
+}
+
+.chatInput {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.inputbox {
+  width: 100%;
+  max-width: 720px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #404040;
+  background-color: #303030;
+  color: #ececec;
+  padding: 18px 60px 18px 20px;
+  font-size: 1rem;
+  border-radius: 14px;
+}
+
+.input::placeholder {
+  color: #999;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #6b8afd;
+}
+
+#submit {
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  border: none;
+  border-radius: 10px;
+  background: #6b8afd;
+  color: white;
+  font-size: 18px;
+  position: absolute;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#submit:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.info {
+  max-width: 720px;
+  font-size: 0.7rem;
+  color: #999;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+
+/* Dropdown menu styles */
+.dropDown {
+  position: absolute;
+  top: 60px; /* Adjust based on your navbar height */
+  right: 20px; /* Adjust based on your layout */
+  background-color: #303030;
+  border: 1px solid #404040;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  text-align: left;
+
+}
+
+.dropDownItem {
+  padding: 10px 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dropDownItem:hover {
+  background-color: #404040;
+  border-radius: 8px;
+  
+}
+
+.navbar {
+  background: rgba(17, 17, 22, 0.85);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.chatInput {
+  background: linear-gradient(
+    180deg,
+    transparent,
+    rgba(17, 17, 22, 0.95)
+  );
+  padding: 18px 20px;
+}
+
+.inputbox {
+  border: 1px solid #393448;
+  border-radius: 18px;
+  background: #1c1a25;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.inputbox:focus-within {
+  border-color: #8b5cf6;
+  box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.12),
+    0 0 20px rgba(139, 92, 246, 0.08);
+}
+
+.inputbox .input {
+  background: transparent;
+  color: #ffffff;
+  outline: none;
+}
+
+#submit {
+  background: linear-gradient(135deg, #8b5cf6, #6366f1);
+  border: none;
+  border-radius: 12px;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+#submit:hover:not(:disabled) {
+  transform: scale(1.07);
+  filter: brightness(1.15);
+}
+
+#submit:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.info {
+  color: #858092;
+}

@@ -1,0 +1,175 @@
+.sidebar {
+  flex: 0 0 260px;
+  width: 260px;
+  min-width: 260px;
+  height: 100vh;
+  box-sizing: border-box;
+  background-color: #171717;
+  color: #b4b4b4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 16px 12px;
+  overflow-y: auto;
+  z-index: 10;
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px;
+}
+
+.sidebar-header h2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ececec;
+}
+
+.logo {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.sidebar .new-chat {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  margin: 12px 0;
+  border-radius: 8px;
+  background-color: transparent;
+  border: 1px solid #444;
+  color: #ececec;
+  cursor: pointer;
+}
+
+.sidebar .new-chat:hover {
+  background-color: #292929;
+}
+
+.history-title {
+  margin: 24px 8px 10px;
+  color: #888;
+  font-size: 13px;
+}
+
+.history {
+  padding: 0;
+  margin: 0;
+}
+
+.history li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  list-style: none;
+  padding: 12px 10px;
+  margin-bottom: 4px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.history li:hover,
+.history li.highlighted {
+  background-color: #292929;
+}
+
+.thread-title {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.fa-trash {
+  position: static;
+  flex-shrink: 0;
+  opacity: 0;
+  color: #b4b4b4;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.history li:hover .fa-trash {
+  opacity: 1;
+}
+
+.fa-trash:hover {
+  color: #ff5555 !important;
+}
+
+.sign {
+  padding: 12px;
+  border-top: 1px solid #444;
+  font-size: 13px;
+  text-align: center;
+}
+
+.sidebar {
+  background: linear-gradient(180deg, #191821, #141319);
+  border-right: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.sidebar-header h2 {
+  letter-spacing: 0.4px;
+}
+
+.logo {
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: rotate(-8deg) scale(1.08);
+}
+
+.sidebar .new-chat {
+  background: linear-gradient(
+    120deg,
+    rgba(139, 92, 246, 0.12),
+    rgba(96, 165, 250, 0.08)
+  );
+  border: 1px solid rgba(167, 139, 250, 0.25);
+  transition: all 0.25s ease;
+}
+
+.sidebar .new-chat:hover {
+  background: linear-gradient(
+    120deg,
+    rgba(139, 92, 246, 0.25),
+    rgba(96, 165, 250, 0.18)
+  );
+  border-color: #8b5cf6;
+  transform: translateY(-2px);
+}
+
+.history li {
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.history li:hover {
+  transform: translateX(3px);
+  background: #292638;
+}
+
+.fa-trash {
+  transition: opacity 0.2s ease, color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.history li:hover .fa-trash {
+  transform: scale(1.1);
+}
+
+.sign {
+  color: #8e899e;
+}
